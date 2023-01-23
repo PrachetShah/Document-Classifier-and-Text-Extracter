@@ -35,7 +35,8 @@ class Xtractor:
     # For OCR and identify, either single file can be given or a filepath will be given
     def OCR(self, filepath=None, filename=None, **kwargs):
         pass
-
+    
+    # identify funtion uses OCR to identify documents
     def identify(self, filepath=None, filename=None, **kwargs):
         pass 
     
