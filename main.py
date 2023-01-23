@@ -38,7 +38,7 @@ class Xtractor:
         return True
 
     
-    # identify funtion uses OCR to identify documents
+    # identify funtion uses OCR to identify documents and returns type of each
     def identify(self, filepath=None, filename=None, **kwargs):
         pass 
     
