@@ -1,5 +1,5 @@
-from xtractor import Xtractor 
+from xtracter import Xtracter 
 
-trial = Xtractor()
+trial = Xtracter()
 
 trial.OCR('inputs/aadhaar2.jpg')

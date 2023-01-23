@@ -30,7 +30,7 @@ Non-Tech Issues
 
 
 
-class Xtractor:
+class Xtracter:
     # Milestone 1
     def __init__(self):
         '''
