@@ -9,7 +9,7 @@ based on their contents for **INDIAN** financial institutions
 
 To start using this package, clone it using github:
 
-`git clone https://github.com/PrachetShah/Document-Classifier-and-Text-Extracter.git`
+`git clone https://github.com/PrachetShah/Document-Classifier-and-Text-Extracter.git` <br>
 and then
 `pip install -r requirements.txt`
 
