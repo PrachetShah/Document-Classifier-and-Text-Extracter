@@ -1,33 +1,8 @@
-import time
 from paddleocr import PaddleOCR, draw_ocr
 import os
 import cv2
-import matplotlib.pyplot as plt
-
-'''
-To activate venv: venv\Scripts\activate
-
-Required Milestones:
-1. Library for Data Classification and Extraction
- - the documents must be identified, classified, and divided
-    into multiple groups
-    submit a single file (image/pdf/word document)
-    that contains many documents.
-    To achieve:
-    1. Class Extract
-    2. Relevant Docstrings
-    3. Implement functions in class - identify(take input and OCR function), save, 
-        OCR Function(conditions for diff documents and split based result)
-
-2. Once document is classified and split, create a library which accepts split
-document and extracts the data from it.
-
-Non-Tech Issues
-1. Project README
-2. Docstring for Functions
-3. Find which all functions can be added to improve efficiency and workflow
-'''
-
+import numpy as np
+# import matplotlib.pyplot as plt
 
 
 class Xtracter:
@@ -46,18 +21,18 @@ class Xtracter:
         ocr = PaddleOCR(use_angle_cls=True)
         
         # Specifying output path and font path.
-        if outpath:
-            out_path = outpath
-        else:
-            out_path = './output_images'
-        font = './simfang.ttf'
+        # if outpath:
+        #     out_path = './'
+        # else:
+        out_path = './output_images'
+        font = 'simfang.ttf'
 
-        result = ocr.ocr(filepath, cls=True)
-        for line in result:
+        result = ocr.ocr('aadhaar2.jpg')
+        for line in result[0]:
             print(line[1][0])
         
         print("OCR Performed")
-        return True
+        return result
 
     
     # identify funtion uses OCR to identify documents and returns type of each
@@ -72,3 +47,16 @@ class Xtracter:
     # Extract Data from doc and return it as text
     def extractData(self, filepath=None, filename=None, **kwargs):
         pass
+
+
+# trial = Xtracter()
+ocr = PaddleOCR(use_angle_cls=True, use_gpu=False)
+out_path = './output_images'
+font = 'simfang.ttf'
+
+result = ocr.ocr('aadhaar2.jpg')
+for line in result[0]:
+    print(line[1][0])
+
+print("OCR Performed")
+result = ocr.OCR(filepath='aadhaar2.jpg')

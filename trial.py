@@ -2,4 +2,4 @@ from xtracter import Xtracter
 
 trial = Xtracter()
 
-trial.OCR('inputs/aadhaar2.jpg')
+result = trial.OCR(filepath='aadhaar2.jpg')
