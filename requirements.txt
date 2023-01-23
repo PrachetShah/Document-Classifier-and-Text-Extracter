@@ -1,0 +1,4 @@
+# GPU
+# !pip install paddlepaddle-gpu
+# !pip install paddleocr
+paddleocr>=2.0.1
