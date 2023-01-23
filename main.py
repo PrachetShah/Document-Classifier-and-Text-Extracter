@@ -22,7 +22,7 @@ Non-Tech Issues
 3. Find which all functions can be added to improve efficiency and workflow
 '''
 
-class Extract:
+class Xtractor:
     # Milestone 1
     def __init__(self):
         '''
