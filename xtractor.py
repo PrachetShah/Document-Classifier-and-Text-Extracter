@@ -1,10 +1,12 @@
 import time
-from paddleocr import PaddleOCR,draw_ocr
+from paddleocr import PaddleOCR, draw_ocr
 import os
 import cv2
 import matplotlib.pyplot as plt
 
 '''
+To activate venv: venv\Scripts\activate
+
 Required Milestones:
 1. Library for Data Classification and Extraction
  - the documents must be identified, classified, and divided
