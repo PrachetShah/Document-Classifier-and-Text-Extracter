@@ -15,6 +15,11 @@ Required Milestones:
 
 2. Once document is classified and split, create a library which accepts split
 document and extracts the data from it.
+
+Non-Tech Issues
+1. Project README
+2. Docstring for Functions
+3. Find which all functions can be added to improve efficiency and workflow
 '''
 
 class Extract:
@@ -33,9 +38,12 @@ class Extract:
 
     def identify(self, filepath=None, filename=None, **kwargs):
         pass 
-
+    
+    # Save the output at a location
     def save(self, outputlocation, **kwargs):
         pass
 
     # Milestone 2
-    def extractData
+    # Extract Data from doc and return it as text
+    def extractData(self, filepath=None, filename=None, **kwargs):
+        pass
