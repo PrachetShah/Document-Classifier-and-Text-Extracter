@@ -26,7 +26,7 @@ To activate venv: venv\Scripts\activate
 
 Required Milestones:
 
-1. Library for Data Classification and Extraction
+1. Create a Library for Data Classification and Extraction
 
 - the documents must be identified, classified, and divided
   into multiple groups
